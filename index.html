@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title></title>
+    
+    <script src="https://kit.fontawesome.com/124ac6c2b5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href= "Style.css">
+</head>
+<body>
+
+    <form id="Myform" class="container col-6 mt-5" novalidate>
+           <h1 class="h1">Registrera Dig</h1>
+            <div>
+                <input id="first-name" class="form-control needs-validation mt-4" required type="text" placeholder="Förnamn*"/>
+                <div id="first-name-error" class="invalid-feedback"> <small>Du måste ange ett giltigt förnamn</small></div>
+            </div>
+            <div>
+                <input id="last-name" class="form-control mt-3 needs-validation" required type="text" placeholder="Efternamn*"/>
+                <div id="last-name-error" class="invalid-feedback"> <small>Du måste ange ett giltigt Efternamn</small></div>
+            </div>
+            <div>
+                <input id="Email" class="form-control mt-3 needs-validation" required type="email" placeholder="E-postadress*"/>
+                <div id="Email-error" class="invalid-feedback"> <small>Du måste ange en gilitig e-postadress</small></div>
+            </div>
+            <div>
+                <input id="password" class="form-control mt-3 needs-validation" required type="password" placeholder="Lösenord*"/>
+                <div id="password-error" class="invalid-feedback"> <small>Du måste ange ett giltigt Lösenord</small></div>
+            </div>
+            <div>
+                <input id="confirm-password" class="form-control mt-3 needs-validation" required type="password" placeholder="Bekräfta Lösenord*"/>
+                <div id="confirm-password-error" class="invalid-feedback"> <small>Du måste ange samma lösenord igen</small></div>
+            </div>
+            <div>
+                <input id="adress" class="form-control mt-3 needs-validation" required type="text" placeholder="Adress*"/>
+                <div id="adress-error" class="invalid-feedback"> <small>Du måste ange en giltig adress</small></div>
+            </div>
+            <div>
+                <input id="ort" class="form-control mt-3 needs-validation" required type="text" placeholder="Ort*"/>
+                <div id="ort-error" class="invalid-feedback"> <small>Du måste ange en giltig ort</small></div>
+            </div>
+            <div>
+                <input id="post-number" class="form-control mt-3 needs-validation" required type="number" placeholder="Postnummer*"/>
+                <div id="post-number-error" class="invalid-feedback"> <small>Du måste ange ett giltigt postnummer</small></div>
+            </div>
+           <div>
+              <div class="mt-3">
+                <small class="date">Ange ditt födelsedatum* </small>
+              </div>
+            <div class="d-flex">
+                <select id= "year" class="form-select age mt-1" required aria-label="Default select example">
+                    <option selected>År</option>
+                </select>
+                <select id= "month" class="form-select age mt-1" required aria-label="Default select example">
+                    <option selected>Månad</option>
+                </select>
+                <select id= "day" class="form-select age mt-1" required aria-label="Default select example">
+                    <option selected>Dag</option>
+                </select> 
+            </div>
+           </div>
+            <div style="display:none" id="selector-error" class="text-danger mb-3 ms-2"> <small>Du måste vara minst 18 år gammal.</small></div>
+            </select>
+            
+            
+            <button id="btn" type="submit" class="btn-secondary mt-4 " >SKICKA</button>
+    
+    </form>
+    
+    <div style="height: 200px;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
